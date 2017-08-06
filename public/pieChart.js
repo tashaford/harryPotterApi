@@ -1,4 +1,4 @@
-var PieChart = function(){
+var PieChart = function(houses){
   var container = document.getElementById('pie-chart');
   var chart = new Highcharts.Chart({
     chart: {
@@ -21,7 +21,7 @@ var PieChart = function(){
       data: [
       {
         name: "Gryffindor",
-        y: 10,
+        y: houses[0],
         dataLabels : {style: {color: '#ae0001', fontSize:'20px', fontWeight: "bold", textOutline: "1px"}},
         color: {
           radialGradient: { cx: 0.5, cy: 0.5, r: 0.5 },
@@ -34,7 +34,7 @@ var PieChart = function(){
       },
       {
         name: "Hufflepuff",
-        y: 1,
+        y: houses[1],
         dataLabels : {style: {color: '#ecb939', fontSize:'20px', fontWeight: "bold", textOutline: "1px"}},
         color: {
           radialGradient: { cx: 0.5, cy: 0.5, r: 0.5 },
@@ -46,7 +46,7 @@ var PieChart = function(){
       },
       {
         name: "Ravenclaw",
-        y: 2,
+        y: houses[2],
         dataLabels : {style: {color: '#222f5b', fontSize:'20px', fontWeight: "bold", textOutline: "1px"}},
         color: {
           radialGradient: { cx: 0.5, cy: 0.5, r: 0.5 },
@@ -58,7 +58,7 @@ var PieChart = function(){
       },
       {
         name: "Slytherin",
-        y: 9,
+        y: houses[3],
         dataLabels : {style: {color: '#2a623d', fontSize:'20px', fontWeight: "bold", textOutline: "1px"}},
         color: {
           radialGradient: { cx: 0.5, cy: 0.5, r: 0.5 },
@@ -72,7 +72,3 @@ var PieChart = function(){
     }]
   });
 }
-
-window.addEventListener('load', function(){
-  new PieChart();
-})

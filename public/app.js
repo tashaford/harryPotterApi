@@ -119,6 +119,7 @@ var houseData = function(characters){
   houses.push(huff);
   houses.push(rave);
   houses.push(sly);
+  new PieChart(houses);
   return houses;
 };
 
@@ -144,6 +145,7 @@ var studentsAndProfessors = function(characters){
   });
   array.push(students);
   array.push(professors);
+  new BarChart(array);
   return array;
 };
 

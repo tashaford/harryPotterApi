@@ -1,4 +1,4 @@
-var BarChart = function(){
+var BarChart = function(list){
   var container = document.getElementById('bar-chart');
   var chart = new Highcharts.Chart({
     chart: {
@@ -20,7 +20,7 @@ var BarChart = function(){
     plotOptions: {column:{colorByPoint: true}},
     series: [{
       name: "Hogwarts",
-      data: [11, 8] 
+      data: list 
     }],
     xAxis: {
       categories: ["Pupils", "Professors"],
@@ -44,7 +44,3 @@ var BarChart = function(){
     colors: ['#5d5d5d', 'Ravenclaw Gold'],
   })
 }
-
-window.addEventListener('load', function(){
-  new BarChart();
-})
