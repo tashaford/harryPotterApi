@@ -1,0 +1,72 @@
+body {
+  font-family: 'Averia Serif Libre', cursive;
+  background-color: #542d5c;
+  background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
+  color: goldenrod;
+}
+
+select {
+  margin-right: 60px;
+  margin-top: 20px;
+  background-color: #ae6bc6;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 20px; 
+}
+
+ul {
+  height: 480px;
+  text-align: center
+}
+
+p {
+  font-size: 25px;
+}
+
+li {
+  font-size: 20px;
+  font-style: italic;
+  list-style-type: none;
+}
+
+.main {
+  font-size: 20px;
+}
+
+.images {
+  height: 200px;
+  padding: 10px;
+}
+
+.container {
+  display: inline-block;
+  padding: 20px;
+}
+
+.header {
+  height: 250px;
+}
+
+#header-text-1 {
+  font-size: 75px;
+  padding-top: 5px;
+  line-height: 1em;
+  margin: 30px;
+  text-align: center
+}
+#header-text-2 {
+  font-size: 48px;
+  padding-top: 10px;
+  line-height: 0em;
+  text-align: center
+}
+
+#hogwarts-crest-1 {
+  width: 18%;
+  float: left;
+  margin: 25px 50px 50px 50px;
+}
+#hogwarts-crest-2 {
+  width: 18%;
+  float: right;
+  margin: 25px 50px 50px 50px;
+}
